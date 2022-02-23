@@ -13,6 +13,7 @@ const config = {
 
 const connection = mysql.createConnection(config)
 
+connection.query(`DELETE FROM people`)
 var insert_name_query = `INSERT INTO people(name) VALUES('Francisco')`
 connection.query(insert_name_query)
 insert_name_query = `INSERT INTO people(name) VALUES('Jose')`
