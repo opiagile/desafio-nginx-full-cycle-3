@@ -21,7 +21,7 @@ connection.query(insert_name_query)
 insert_name_query = `INSERT INTO people(name) VALUES('Magalhães')`
 connection.query(insert_name_query)
 insert_name_query = `INSERT INTO people(name) VALUES('Araújo')`
-connection.query(insert_name_query)
+connection.query(insert_name_query) 
 
 
 app.get('/', (req, res) => {
